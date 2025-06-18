@@ -1,0 +1,80 @@
+.easter-egg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #42b72a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  font-size: 24px;
+  user-select: none;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.easter-egg:hover {
+  transform: scale(1.1);
+}
+
+.easter-egg-message {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #1877f2;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  text-align: center;
+  animation: 
+    fadeIn 0.5s ease forwards,
+    bounce 0.5s ease 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.snowflake {
+  position: fixed;
+  top: -20px;
+  font-size: 20px;
+  color: #1877f2;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear forwards;
+  z-index: 1000;
+  animation: fall linear forwards, wobble 2s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes fall {
+  to { transform: translateY(105vh); }
+}

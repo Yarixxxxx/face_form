@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clown</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="#" class="logo">facebook<span>Clown</span></a>
+        <nav>
+          <div>
+            <a href="#" aria-label="Главная страница">Главная</a>
+          </div>
+          <div>
+            <a class="header-part" href="#" aria-label="О нас">О нас</a>
+          </div>
+          <div>
+            <a class="header-part" href="#" aria-label="Контакты">Контакты</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="login-card">
+          <h2 class="login-title">Войдите в Facebook Clown</h2>
+
+          <div class="social-login">
+            <button class="social-btn google-btn" aria-label="Войти через Google">
+              <span class="social-icon">G</span>
+              Войти через Google
+            </button>
+          </div>
+
+          <div class="divider">
+            <span class="divider-text">или</span>
+          </div>
+
+          <form id="loginForm" novalidate>
+            <div class="form-group">
+              <label for="email">Электронная почта или номер телефона</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                name="email"
+                aria-required="true"
+                aria-describedby="emailHelp"
+                placeholder="Введите email или телефон"
+                required
+              />
+              <div id="emailHelp" class="sr-only">Введите ваш email или номер телефона</div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Пароль</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                name="password"
+                aria-required="true"
+                aria-describedby="passwordHelp"
+                placeholder="Введите пароль"
+                required
+              />
+              <div id="passwordHelp" class="sr-only">Введите ваш пароль</div>
+            </div>
+
+            <div class="remember-group">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember" id="rememberLabel">Сохранить вход</label>
+            </div>
+
+            <button type="submit" class="login-btn" id="submitBtn">Войти</button>
+          </form>
+
+          <a href="#" class="forgot-password" aria-label="Забыли пароль?">Забыли пароль?</a>
+        </div>
+
+        <div class="signup-link">
+          <p>Нет аккаунта? <a href="#" aria-label="Зарегистрироваться">Зарегистрироваться</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#" aria-label="Главная">Главная</a>
+          <a href="#" aria-label="О нас">О нас</a>
+          <a href="#" aria-label="Реклама">Реклама</a>
+          <a href="#" aria-label="Условия использования">Условия</a>
+          <a href="#" aria-label="Политика конфиденциальности">Конфиденциальность</a>
+          <a href="#" aria-label="Настройки">Настройки</a>
+          <a href="#" aria-label="Помощь">Помощь</a>
+        </div>
+        <div class="copyright">Facebook Clown © 2025. Все права защищены.</div>
+      </div>
+    </footer>
+
+    <div class="easter-egg" id="easterEgg" title="Нажми меня!">?</div>
+  </body>
+</html>

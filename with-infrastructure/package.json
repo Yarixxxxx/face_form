@@ -1,0 +1,45 @@
+{
+  "name": "with-infrastructure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode development",
+    "start": "npx http-server public -o",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint \"**/*.ts\"",
+    "lint:fix": "eslint \"**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"public/**/*.html\" \"public/**/*.css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^8.56.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cpx": "^1.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "globals": "^15.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
+    "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "ts-jest": "^29.4.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <17.0.0"
+  }
+}
