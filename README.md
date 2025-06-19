@@ -10,13 +10,21 @@
 2. With-infrastructure / Framework
 
 В терминале в директории с проектом вводим следующие команды:
+
 nvm install npm - установка npm
+
 npm install - установка зависимостей
+
 npm run build - сборка проекта
+
 npm run dev - запуск для локальной разработки
+
 npm run start - запуск проекта
+
 npm run test - запуск тестов
+
 npm run lint (lint:fix) - запуск ESLint (автоисправление ошибок)
+
 npm run format - запуск форматтера
 
 ❓Ответы на вопросы❓
