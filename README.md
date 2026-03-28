@@ -2,10 +2,6 @@
 
 🚀Запуск🚀 
 
-1. Native
-
-С открытым файлом index.html нажать Go Live в VS Code
-Или открыть файл index.html любым браузером
 
 2. With-infrastructure / Framework
 
