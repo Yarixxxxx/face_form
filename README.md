@@ -3,15 +3,8 @@
 🚀Запуск🚀 
 
 
-2. With-infrastructure / Framework
 
-В терминале в директории с проектом вводим следующие команды:
 
-nvm install npm - установка npm
-
-npm install - установка зависимостей
-
-npm run build - сборка проекта
 
 npm run dev - запуск для локальной разработки
 
